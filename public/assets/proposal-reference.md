@@ -917,23 +917,55 @@ Illustrative preview; screens vary by iOS version. Saving requires parent confir
 
 ---
 
-## 22. Keep every enquiry in view.
+## 22. One parent. One connected journey.
 
 Execution · Admissions portal
 
-Keep every enquiry in view.
+One parent. One connected journey.
 
-Proposed portal · Sample data only. Counsellors manage assigned leads; management reviews enquiries, follow-ups, visits and admissions.
+From the first enquiry to the next confirmed action.
+
+01
+
+Lead arrives
+
+Capture details and assign an owner.
+
+02
+
+Counsellor calls
+
+Understand the parent’s needs.
+
+03
+
+Review key points
+
+Review the recording and AI draft.
+
+04
+
+Send updates
+
+Approve the right message for each person.
+
+05
+
+Track & follow up
+
+Schedule the visit and track the outcome.
+
+Follow Meera S., a fictional Grade 5 boarding enquiry from Bengaluru, through the next five screens.
 
 ---
 
-## 23. 01. How the lead comes in.
+## 23. A new enquiry gets an owner.
 
-Execution · Portal walkthrough
+Portal walkthrough · Step 1 of 5
 
-01. How the lead comes in.
+A new enquiry gets an owner.
 
-A form submission becomes an enquiry with a source and an owner.
+Meera submits a website form about Grade 5 boarding.
 
 01
 
@@ -945,113 +977,399 @@ Counsellor calls
 
 03
 
-Save the outcome
+Review key points
 
 04
 
-Admin reviews
+Send updates
 
-BIRLA
+05
 
-Admissions
+Track & follow up
 
-SAMPLE DATA
+NEW ENQUIRY
 
-A new enquiry arrives.
+Source: Website
 
-Ad lead forms
+Ads
 
-Website forms
+Website
 
-NFC-linked forms
+NFC-linked form
 
-Parent submits details
-
-↓
-
-Connected form sends the enquiry
+→ Enquiry inbox
 
 Meera S.
 
 New
 
+Parent phone
+
++91 ••••• ••123
+
 Grade / city
 
 Grade 5 · Bengaluru
 
-Phone
+Interest
 
-+91 ••••• ••123
+Residential schooling
 
-Source
-
-Website enquiry
-
-Assigned to
+Assigned owner
 
 Counsellor A
 
-New enquiry assigned to Counsellor A
+New enquiry added to Counsellor A’s queue.
+
+The parent submits a form.
+
+Capture name, phone, grade and city, along with the original source.
+
+The portal assigns an owner.
+
+Use agreed assignment rules. Flag repeat enquiries for review.
+
+The counsellor gets a task.
+
+The lead appears in their queue; the admin can see its owner and status.
+
+NEXT
+
+Counsellor A opens the enquiry and calls Meera.
+
+Illustrative workflow · Sample data. An ad click or NFC tap alone is not a lead. Connected forms and assignment rules require setup.
+
+---
+
+## 24. The counsellor calls with context.
+
+Portal walkthrough · Step 2 of 5
+
+The counsellor calls with context.
+
+The parent’s details and conversation history stay in one record.
 
 01
 
-Capture the details
-
-Parent name, phone, grade and city enter through a connected form.
+Lead arrives
 
 02
 
-Route to the right person
-
-The portal assigns a counsellor using the school’s agreed rules.
+Counsellor calls
 
 03
 
-Put the lead in the queue
+Review key points
 
-The assigned counsellor sees a new enquiry and the admin can track it.
+04
 
-Proposed workflow · Fictional example. An ad click or NFC tap alone is not a lead. Form integrations and duplicate handling must be configured.
+Send updates
+
+05
+
+Track & follow up
+
+MEERA S. · GRADE 5
+
+Counsellor A
+
+Website enquiry · Bengaluru · Boarding interest
+
+MS
+
+Meera S.
+
++91 ••••• ••123
+
+Call parent
+
+Connected · 03:42
+
+Recording consent captured
+
+Mute
+
+Keypad
+
+End call
+
+Open the parent’s record.
+
+Check their enquiry, source and any earlier conversations before calling.
+
+Call and ask permission to record.
+
+Use the connected calling service. If recording is declined, enter notes manually.
+
+Understand the next step.
+
+Meera asks about supervision, a brochure and a campus visit at 11 AM tomorrow.
+
+NEXT
+
+The call ends; the recording becomes a transcript and draft summary.
+
+Illustrative workflow · Sample data. Calling and recording require a supported integration and consent. No real call is placed here.
 
 ---
 
-## 24. Record the call. Highlight what matters.
+## 25. Turn the call into clear next steps.
 
-Execution · Detailed portal preview
+Portal walkthrough · Step 3 of 5
 
-Record the call. Highlight what matters.
+Detailed screen ↗
 
-Proposed interface · Sample data only. Click the image for full size. Calling, messaging and Calendar connections require configuration.
+Turn the call into clear next steps.
 
-Obtain recording consent. The counsellor calls from the lead record using a supported integration, or logs a phone call manually. Save the recording, duration, owner and outcome. Generate a transcript and draft key points covering grade, location, residential interest, parent concerns, promises, unanswered questions and next steps. Link highlights to audio timestamps. Confirm names, dates and visit availability; AI output is a draft.
+Review the key points against the recording before using them.
+
+01
+
+Lead arrives
+
+02
+
+Counsellor calls
+
+03
+
+Review key points
+
+04
+
+Send updates
+
+05
+
+Track & follow up
+
+CALL RECORDING
+
+Answered · 03:42
+
+▶
+
+00:48 / 03:42
+
+00:18
+
+“We are looking for Grade 5 boarding.”
+
+00:48
+
+“How are students supervised after class?”
+
+02:46
+
+“Can we visit tomorrow at 11 AM?”
+
+Transcript is generated from the recording; check accuracy.
+
+AI KEY POINTS
+
+Draft
+
+Interest
+
+Grade 5 residential schooling.
+
+Concern
+
+After-class supervision.
+
+Promised action
+
+Share the boarding brochure.
+
+Visit requested
+
+16 Sep · 11:00 AM — confirm availability.
+
+Counsellor reviews and edits.
+
+Check the recording, correct details and confirm the school’s visit slot.
+
+NEXT
+
+With the visit slot confirmed, prepare separate recipient updates.
+
+Illustrative workflow · Sample data. AI output is a draft. Keep recordings restricted to authorised staff.
 
 ---
 
-## 25. Review once. Send the right update.
+## 26. Approve the right update for each person.
 
-Execution · Detailed portal preview
+Portal walkthrough · Step 4 of 5
 
-Review once. Send the right update.
+Detailed screen ↗
 
-Proposed interface · Sample data only. Click the image for full size. Calling, messaging and Calendar connections require configuration.
+Approve the right update for each person.
 
-The counsellor reviews and edits the call summary. Parent updates contain a friendly recap, agreed next steps, brochure and directions. Admissions admin receives the owner, concern, status and follow-up deadline. A designated board member receives a concise daily digest, with urgent decisions escalated separately. Check recipients, dates and parent-facing wording before approving delivery. Internal notes and recordings stay in the authorised portal. No message is sent by this presentation.
+One reviewed conversation produces three different messages.
+
+01
+
+Lead arrives
+
+02
+
+Counsellor calls
+
+03
+
+Review key points
+
+04
+
+Send updates
+
+05
+
+Track & follow up
+
+School confirms the visit:
+
+16 September · 11:00 AM IST
+
+Summary reviewed
+
+01 · WHATSAPP / EMAIL
+
+Parent
+
+Hello Meera, thank you for discussing Grade 5 boarding with us. Your campus visit is booked for 16 September at 11 AM. Here are the brochure and directions. Counsellor A will assist you.
+
+Send: recap, useful links and the agreed next step.
+
+02 · PORTAL UPDATE
+
+Admissions admin
+
+Meera S. · Grade 5
+
+Owner: Counsellor A
+
+Concern: supervision
+
+Status: Visit booked
+
+Follow-up: Today, 4 PM
+
+See: reviewed notes, the owner and pending actions.
+
+03 · DAILY DIGEST
+
+Board member
+
+Residential enquiry progressed to a campus visit.
+
+Counsellor A owns the follow-up. No management decision is needed in this example.
+
+Receive: progress and decisions needing attention.
+
+Check recipients
+
+→
+
+Review wording
+
+→
+
+Approve & send
+
+NEXT
+
+Save delivery status and add the confirmed visit to Google Calendar.
+
+Illustrative workflow · Sample data. These are message previews. No messages are sent by the presentation.
 
 ---
 
-## 26. Track delivery. Schedule the next step.
+## 27. Keep the visit and follow-up visible.
 
-Execution · Detailed portal preview
+Portal walkthrough · Step 5 of 5
 
-Track delivery. Schedule the next step.
+Detailed screen ↗
 
-Proposed interface · Sample data only. Click the image for full size. Calling, messaging and Calendar connections require configuration.
+Keep the visit and follow-up visible.
 
-After saving, the admin sees call history, approved summary, assigned owner, lead status, pending work and delivery logs. Create confirmed visit events on the connected school Google Calendar in Asia/Kolkata time, with campus location and host. Invite the parent, and distinguish invitation sent from accepted. Keep internal follow-ups and private notes separate from the parent invitation. Update or cancel the existing calendar event when a visit changes; do not create duplicates. Highlight failed sends for retry and overdue tasks for reassignment. Record attended, rescheduled, cancelled or missed visits separately; only the school confirms admission. Proposed lead statuses: New, Contacted, Follow-up Required, Visit Booked, Visited, Admitted, Closed.
+The admin sees what was saved, sent, scheduled and still needs action.
+
+01
+
+Lead arrives
+
+02
+
+Counsellor calls
+
+03
+
+Review key points
+
+04
+
+Send updates
+
+05
+
+Track & follow up
+
+GOOGLE CALENDAR
+
+Asia/Kolkata · IST
+
+16 SEPTEMBER · 11:00–11:30 AM
+
+Campus visit · Meera S.
+
+Birla Open Minds, Bibinagar
+
+Host: Admissions team
+
+Invitation sent · RSVP pending
+
+Internal follow-up
+
+Today, 4 PM · Counsellor A checks that the brochure reached the parent.
+
+ADMIN ACTIVITY
+
+Meera S. · Website
+
+Recording + reviewed summary
+
+Saved
+
+Parent update
+
+Sent
+
+Admin notification
+
+Sent
+
+Board digest
+
+Scheduled · 6 PM
+
+Admin can act on the record.
+
+Review notes, retry failed sends, reassign work and follow up on overdue tasks.
+
+After the visit:
+
+Attended · Rescheduled · Missed
+
+NEXT
+
+The school hosts the visit and records the actual outcome.
+
+Illustrative workflow · Sample data. An invitation sent is not an RSVP. Internal notes stay in the portal; school confirmation is required for admission.
 
 ---
 
-## 27. Two teams. Clear ownership.
+## 28. Two teams. Clear ownership.
 
 Execution
 
@@ -1080,52 +1398,6 @@ Host.
 School facts and access, parent counselling, confirmations, campus tours and admissions.
 
 Omyra capabilities: digital marketing, web development, UI/UX and hosting support. Agree one school approver and one admissions owner.
-
----
-
-## 28. One connected delivery plan.
-
-Execution
-
-One connected delivery plan.
-
-Content, campaigns and admissions tools work towards the same goal.
-
-01
-
-Content + creative
-
-Campus shoots, reels, carousels, podcasts and grade-wise teaching videos.
-
-02
-
-Campaigns + website
-
-Channel tests, visit pages, enquiry tracking and clear reports.
-
-03
-
-Admissions tools
-
-NFC contact cards, digital contact pages and the proposed follow-up dashboard.
-
-Our working flow:
-
-Plan
-
-→
-
-Produce
-
-→
-
-Launch
-
-→
-
-Review
-
-School-approved facts and content guide production. The school handles parent conversations and campus visits.
 
 ---
 
