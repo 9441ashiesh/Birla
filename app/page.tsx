@@ -1,11 +1,20 @@
 'use client';
 
-import { Fragment, useCallback, useEffect, useRef, useState } from 'react';
+import { Fragment, memo, useCallback, useEffect, useRef, useState } from 'react';
 import slides from './slides.json';
+import aliases from './slide-aliases.json';
+
+const Slide = memo(function Slide({ slide, index, active }: { slide: typeof slides[number]; index: number; active: boolean }) {
+  return <section id={slide.id} className={`${slide.className}${active ? ' active' : ''}`}
+    data-title={slide.title} data-group={slide.group}
+    aria-label={`Slide ${index + 1}: ${slide.title}`} aria-hidden={!active} hidden={!active}
+    dangerouslySetInnerHTML={{ __html: slide.html }} />;
+});
 
 /** Trusted, locally authored slide content; no remote or user-entered HTML. */
 export default function Presentation() {
   const [current, setCurrent] = useState(0);
+  const [query, setQuery] = useState('');
   const [isFullscreen, setFullscreen] = useState(false);
   const [message, setMessage] = useState('');
   const stage = useRef<HTMLElement>(null);
@@ -20,7 +29,9 @@ export default function Presentation() {
 
   useEffect(() => {
     const readHash = () => {
-      const index = slides.findIndex(s => `#${s.id}` === window.location.hash);
+      const hash = window.location.hash.slice(1);
+      const id = (aliases as Record<string,string>)[hash] || hash;
+      const index = slides.findIndex(s => s.id === id);
       if (index >= 0) go(index, false);
     };
     readHash();
@@ -120,15 +131,11 @@ export default function Presentation() {
         touch.current = null;
       }}>
       <div className="canvas" id="canvas">
-        {slides.map((slide, index) => <section key={slide.id} id={slide.id}
-          className={`${slide.className}${index === current ? ' active' : ''}`}
-          data-title={slide.title} data-group={slide.group}
-          aria-label={`Slide ${index + 1}: ${slide.title}`} aria-hidden={index !== current} hidden={index !== current}
-          dangerouslySetInnerHTML={{ __html: slide.html }} />)}
+        {slides.map((slide, index) => <Slide key={slide.id} slide={slide} index={index} active={index === current} />)}
       </div>
     </main>
     <footer className="viewer-bottom">
-      <button id="contents" aria-haspopup="dialog" onClick={() => overview.current?.showModal()}>▦ <span>All slides</span></button>
+      <button id="contents" aria-haspopup="dialog" onClick={() => overview.current?.showModal()}>▦ <span>Find a slide</span></button>
       <div className="position"><span id="group-label">{slides[current].group}</span><span id="slide-title">{slides[current].title}</span></div>
       <div className="navigation">
         <button id="previous" aria-label="Previous slide" disabled={current === 0} onClick={() => go(current - 1)}>←</button>
@@ -142,16 +149,19 @@ export default function Presentation() {
       const rect = event.currentTarget.getBoundingClientRect();
       if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) overview.current?.close();
     }}>
-      <div className="overview-head"><div><span className="eyebrow">THE FULL PRESENTATION</span><h2>Choose a slide.</h2></div>
+      <div className="overview-head"><div><span className="eyebrow">THREE CHAPTERS · CLIENT REFERENCE</span><h2>Find the point you need.</h2></div>
         <button id="close-overview" aria-label="Close slide overview" onClick={() => overview.current?.close()}>✕</button>
       </div>
+      <input className="slide-search" type="search" autoComplete="off" aria-label="Search presentation" placeholder="Search content ideas, NFC, budget, follow-ups…" value={query} onChange={event => setQuery(event.target.value)} />
+      <div className="chapter-shortcuts">{['Research','Strategy','Execution'].map((name,index) => <button key={name} onClick={() => { setQuery(''); overview.current?.close(); go(slides.findIndex(s => s.id === `chapter-${index + 1}`)); }}>0{index + 1} / {name} ↗</button>)}</div>
       <nav id="slide-list" aria-label="All presentation slides">
-        {slides.map((slide, index) => <Fragment key={slide.id}>
-          {(index === 0 || slides[index - 1].group !== slide.group) && <h3 className="overview-group">{slide.group}</h3>}
+        {slides.map((slide, index) => (!query.trim() || slide.searchText.toLowerCase().includes(query.trim().toLowerCase())) && <Fragment key={slide.id}>
+          {!query.trim() && (index === 0 || slides[index - 1].group !== slide.group) && <h3 className="overview-group">{slide.group}</h3>}
           <a href={`#${slide.id}`} aria-current={index === current ? 'true' : 'false'} onClick={event => { event.preventDefault(); overview.current?.close(); go(index); }}>
             <span>{String(index + 1).padStart(2, '0')}</span>{slide.title}
           </a>
         </Fragment>)}
+        {query.trim() && !slides.some(s => s.searchText.toLowerCase().includes(query.trim().toLowerCase())) && <p>No matching slides. Try another word or choose a chapter above.</p>}
       </nav>
       <p className="keyboard-help">Use ← → or Space to navigate · Home returns to the opening · F for full screen</p>
     </dialog>

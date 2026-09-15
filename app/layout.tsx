@@ -1,9 +1,10 @@
 import type { Metadata } from 'next';
 import './globals.css';
+import './revision.css';
 
 export const metadata: Metadata = {
   title: 'Omyra × Birla Open Minds · Admissions Proposal',
-  description: 'Research, creative concepts and a proposed admissions growth partnership for Birla Open Minds Bibinagar.',
+  description: 'A concise 28-slide proposal: research, strategy and execution for Birla Open Minds Bibinagar, proposed by Omyra Technologies.',
   icons: { icon: '/assets/logo.png' },
 };
 
