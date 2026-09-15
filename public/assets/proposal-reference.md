@@ -955,7 +955,7 @@ Track & follow up
 
 Schedule the visit and track the outcome.
 
-Follow Meera S., a fictional Grade 5 boarding enquiry from Bengaluru, through the next five screens.
+Follow Meera S., a fictional Grade 5 boarding enquiry from Bengaluru, through the following five steps.
 
 ---
 
@@ -1279,21 +1279,21 @@ Approve & send
 
 NEXT
 
-Save delivery status and add the confirmed visit to Google Calendar.
+Review the parent message, then the management update.
 
 Illustrative workflow · Sample data. These are message previews. No messages are sent by the presentation.
 
 ---
 
-## 27. Keep the visit and follow-up visible.
+## 27. What the parent receives.
 
-Portal walkthrough · Step 5 of 5
+Portal walkthrough · Step 4 of 5
 
 Detailed screen ↗
 
-Keep the visit and follow-up visible.
+What the parent receives.
 
-The admin sees what was saved, sent, scheduled and still needs action.
+A helpful recap, useful links and a confirmed next step.
 
 01
 
@@ -1315,27 +1315,287 @@ Send updates
 
 Track & follow up
 
-GOOGLE CALENDAR
+PARENT MESSAGE PREVIEW
+
+Meera S. · WhatsApp / email
+
+BIRLA OPEN MINDS · ADMISSIONS
+
+Hello Meera, thank you for speaking with us about Grade 5 boarding.
+
+Your campus visit is booked for
+
+16 September at 11:00 AM.
+
+We look forward to welcoming you.
+
+Here are the boarding brochure and campus directions. Please reply if you need to change your visit time.
+
+Counsellor A · Admissions team
+
+Boarding brochure ↗
+
+Campus directions ↗
+
+Reviewed draft → Approve → Send → Record delivery status
+
+Confirm what was agreed.
+
+Use the correct grade, date, time and school contact. Add only approved links.
+
+Keep it helpful and personal.
+
+Give the parent a short recap, the promised information and one clear next step.
+
+Track delivery and replies.
+
+Record sent or failed status. A sent message does not mean the parent read or accepted it.
+
+NEXT
+
+Send the management update to the designated board member.
+
+Illustrative workflow · Sample data. Message drafts need counsellor approval. Sending and reply tracking require configured channels.
+
+---
+
+## 28. What the board member receives.
+
+Portal walkthrough · Step 4 of 5
+
+Detailed screen ↗
+
+What the board member receives.
+
+A concise management update with decisions clearly called out.
+
+01
+
+Lead arrives
+
+02
+
+Counsellor calls
+
+03
+
+Review key points
+
+04
+
+Send updates
+
+05
+
+Track & follow up
+
+BOARD MEMBER DIGEST
+
+Daily · 6:00 PM
+
+ILLUSTRATIVE UPDATE · ONE ENQUIRY
+
+Residential enquiry
+
+progressed to a visit.
+
+Enquiry
+
+Grade 5 · Bengaluru
+
+Assigned owner
+
+Counsellor A
+
+Visit booked
+
+16 Sep · 11:00 AM
+
+Decision needed
+
+None in this example
+
+Parent’s main question
+
+After-class supervision. The counsellor will share the school-approved boarding information.
+
+Send to a designated recipient.
+
+Give the main board member a concise update through the agreed channel.
+
+Separate routine and urgent updates.
+
+Group normal progress in a daily digest. Escalate items needing a decision with an owner and deadline.
+
+Keep detailed records accessible.
+
+Authorised staff can open the reviewed notes in the portal. Avoid sending raw recordings in routine digests.
+
+NEXT
+
+Create the confirmed visit invitation in Google Calendar.
+
+Illustrative workflow · Sample data. Digest timing, recipients and urgent escalation rules are agreed with the school.
+
+---
+
+## 29. Put the confirmed visit in the calendar.
+
+Portal walkthrough · Step 5 of 5
+
+Detailed screen ↗
+
+Put the confirmed visit in the calendar.
+
+The school gets an appointment; the parent gets an invitation.
+
+01
+
+Lead arrives
+
+02
+
+Counsellor calls
+
+03
+
+Review key points
+
+04
+
+Send updates
+
+05
+
+Track & follow up
+
+GOOGLE CALENDAR · VISIT INVITATION
 
 Asia/Kolkata · IST
 
-16 SEPTEMBER · 11:00–11:30 AM
+SEPTEMBER
 
-Campus visit · Meera S.
+16
+
+2026
+
+11:00–11:30 AM
+
+Campus visit
+
+Meera S. · Grade 5
 
 Birla Open Minds, Bibinagar
 
 Host: Admissions team
 
-Invitation sent · RSVP pending
+School calendar
+
+Admissions visits
+
+Parent invitation
+
+Sent · Response pending
+
+Proposed reminders
+
+24 hours + 1 hour before
 
 Internal follow-up
 
-Today, 4 PM · Counsellor A checks that the brochure reached the parent.
+15 Sep · 4:00 PM
 
-ADMIN ACTIVITY
+Keep one event linked to this lead. Update it when the visit changes.
 
-Meera S. · Website
+Create the confirmed appointment.
+
+Add the date, time, campus location and available host to the school’s connected calendar.
+
+Invite the parent.
+
+Send an invitation to the parent’s confirmed email, or share an add-to-calendar link.
+
+Keep internal information separate.
+
+Private call notes and recordings stay in the portal. The admin tracks accepted, declined or pending replies.
+
+NEXT
+
+The admin checks delivery, ownership and the next follow-up.
+
+Illustrative workflow · Sample data. Calendar access, invitation delivery and reminders require setup. Parent calendar settings may affect visibility.
+
+---
+
+## 30. The admin sees the complete picture.
+
+Portal walkthrough · Step 5 of 5
+
+Detailed screen ↗
+
+The admin sees the complete picture.
+
+One record connects the call, messages, visit and responsible person.
+
+01
+
+Lead arrives
+
+02
+
+Counsellor calls
+
+03
+
+Review key points
+
+04
+
+Send updates
+
+05
+
+Track & follow up
+
+LEAD RECORD · MEERA S.
+
+Admin view
+
+Current status
+
+Visit booked
+
+Assigned owner
+
+Counsellor A
+
+Original source
+
+Website enquiry
+
+Latest call
+
+Answered · 03:42
+
+Next follow-up
+
+Today · 4:00 PM
+
+Confirmed visit slot
+
+16 Sep · 11:00 AM
+
+Every action stays with the lead.
+
+Open the call history, approved summary, calendar event and parent replies from this record.
+
+Access:
+
+Admin sees authorised records; counsellors see assigned leads.
+
+DELIVERY & TASKS
+
+Example status
 
 Recording + reviewed summary
 
@@ -1345,31 +1605,103 @@ Parent update
 
 Sent
 
-Admin notification
+Calendar invitation
 
-Sent
+RSVP pending
 
 Board digest
 
 Scheduled · 6 PM
 
-Admin can act on the record.
+Take action when needed.
 
-Review notes, retry failed sends, reassign work and follow up on overdue tasks.
-
-After the visit:
-
-Attended · Rescheduled · Missed
+Retry failed sends, review overdue tasks, reassign ownership and confirm the campus host.
 
 NEXT
 
-The school hosts the visit and records the actual outcome.
+After the visit, the school records what actually happened.
 
-Illustrative workflow · Sample data. An invitation sent is not an RSVP. Internal notes stay in the portal; school confirmation is required for admission.
+Illustrative workflow · Sample data. Delivery failures should be shown for retry. An invitation sent is not an accepted RSVP.
 
 ---
 
-## 28. Two teams. Clear ownership.
+## 31. After the visit, close the loop.
+
+Portal walkthrough · Step 5 of 5
+
+After the visit, close the loop.
+
+Record the real outcome and keep the parent’s next step clear.
+
+01
+
+Lead arrives
+
+02
+
+Counsellor calls
+
+03
+
+Review key points
+
+04
+
+Send updates
+
+05
+
+Track & follow up
+
+VISIT RECORD · MEERA S.
+
+School-confirmed update
+
+16 SEPTEMBER · 11:02 AM
+
+Family arrived on campus.
+
+Status updated: Visited
+
+Tour host
+
+Admissions team
+
+Parent’s next question
+
+Grade 5 admission process
+
+Next action
+
+Share approved application steps
+
+Follow-up owner
+
+Counsellor A
+
+A completed visit is recorded separately from a confirmed admission.
+
+If the family attends
+
+Record arrival, visit notes and the next agreed action. Share application guidance when requested.
+
+If plans change
+
+Reschedule the existing event, or mark a cancellation or missed visit and assign follow-up.
+
+Close the loop accurately
+
+Record admission only after school confirmation. If the family does not proceed, save a closed reason.
+
+NEXT
+
+Clear ownership keeps this process moving every day.
+
+Illustrative workflow · Sample data. This is a fictional attended-visit example. School-confirmed admissions remain a separate outcome.
+
+---
+
+## 32. Two teams. Clear ownership.
 
 Execution
 
@@ -1401,7 +1733,7 @@ Omyra capabilities: digital marketing, web development, UI/UX and hosting suppor
 
 ---
 
-## 29. Measure what moves the decision forward.
+## 33. Measure what moves the decision forward.
 
 Execution
 
@@ -1435,7 +1767,7 @@ Track enquiries, bookings, attendance and school-confirmed admissions separately
 
 ---
 
-## 30. Let’s agree the first 30 days.
+## 34. Let’s agree the first 30 days.
 
 Execution
 

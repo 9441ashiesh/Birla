@@ -1,6 +1,6 @@
 # Birla Open Minds × Omyra Technologies
 
-A Next.js App Router presentation with 30 slides, three image-free chapter covers, keyboard and touch navigation, searchable slide overview, full-screen mode and print styles. Only the opening cover uses a photograph. All assets are local.
+A Next.js App Router presentation with 34 slides, three image-free chapter covers, keyboard and touch navigation, searchable slide overview, full-screen mode and print styles. Only the opening cover uses a photograph. All assets are local.
 
 ## Run
 
@@ -37,4 +37,4 @@ Research, Strategy and Execution contain all 16 content ideas, six revised campa
 
 ## Concise meeting edition
 
-30 slides across Research, Strategy and Execution. The 16 content ideas are grouped into four pages; the 30-day plan uses two pages. Detailed reference notes remain a separate download.
+34 slides across Research, Strategy and Execution. The 16 content ideas are grouped into four pages; the 30-day plan uses two pages. Detailed reference notes remain a separate download.
